@@ -7,7 +7,8 @@ const blogRoutes = require('./routes/blogRoutes');
 const app = express();
 
 // connect to mongodb & listen for requests
-const dbURI ="mongodb+srv://mani:let1234@manicloudblog.ph68x.mongodb.net/node-tuts?retryWrites=true&w=majority";
+// i removed my mongo db account,you must make a mongo account and enter your own user and pass instead of ######### down below.
+const dbURI ="mongodb+srv://#########@manicloudblog.ph68x.mongodb.net/node-tuts?retryWrites=true&w=majority";
 
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(result => app.listen(3000))
